@@ -2,7 +2,7 @@
 /**
  * main - Size of files
  *
- * Return 0 (success)
+ * Return 0 (Success)
  */
 int main(void)
 {
