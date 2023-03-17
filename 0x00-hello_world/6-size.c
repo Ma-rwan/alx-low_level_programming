@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - sizeof
+ * main - Size of files
  * Return 0 (success)
  */
 int main(void)
