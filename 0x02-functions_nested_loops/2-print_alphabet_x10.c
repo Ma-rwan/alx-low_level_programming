@@ -2,6 +2,7 @@
 
 /**
  * print_alphabet_10x - Make alphabet x10 times
+ *
  * Return: void
  */
 
