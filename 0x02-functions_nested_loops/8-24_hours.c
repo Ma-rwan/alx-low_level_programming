@@ -4,7 +4,7 @@
  * jack_bauer - main Entry
  */
 
-void jack_bauer(void);
+void jack_bauer(void)
 {
 	int min, hr;
 
