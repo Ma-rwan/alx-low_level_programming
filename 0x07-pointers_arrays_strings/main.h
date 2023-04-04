@@ -1,7 +1,7 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
-har *_memset(char *s, char b, unsigned int n);
+char *_memset(char *s, char b, unsigned int n);
 
 char *_memcpy(char *dest, char *src, unsigned int n);
 
@@ -16,7 +16,6 @@ char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 
 void print_diagsums(int *a, int size);
-Format: see example
 
 
 
