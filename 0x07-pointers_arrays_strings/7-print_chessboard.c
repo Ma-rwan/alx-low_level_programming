@@ -1,10 +1,12 @@
 #include "main.h"
+#include "_putchar.c"
 
 /**
  * print_chessboard - Entry point
  * @a: rows.
  * Return: nothing.
  */
+
 void print_chessboard(char (*a)[8])
 {
 	int itr;
