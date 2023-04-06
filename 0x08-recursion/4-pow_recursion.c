@@ -4,7 +4,7 @@
  * _pow_recursion - Entry point
  * @x: input 1
  * @y: input 2
- * return: 0
+ * Return: 0
  */
 
 int _pow_recursion(int x, int y)
