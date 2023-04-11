@@ -1,46 +1,51 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- * str_concat - get ends of input and add together for size
- * @s1: input one to concat
- * @s2: input two to concat
- * Return: concat of s1 and s2
+ * _strlen - find length of string
+ * @s: string
+ * Return: int
  */
+
+int _strlen(char *s)
+{
+	int size = 0;
+
+	for (; s[size] != '\0'; size++)
+	;
+	return (size);
+}
+
+/**
+ * *str_cincat - concates two strings
+ * @s1: string 1
+ * @s2: string 2
+ * Return: pointer
+ */
+
 char *str_concat(char *s1, char *s2)
 {
-	char *conct;
-	int i, ci;
+	int size1, size2, i;
+	char *m;
 
 	if (s1 == NULL)
-		s1 = "";
-
+		s1 = "\0";
 	if (s2 == NULL)
-		s2 = "";
+		s2 = "\0";
 
-		i = ci = 0;
+	size1 = _strlen(s1);
+	size2 = _strlen(s2);
 
-	while (s1[i] != '\0')
-		i++;
+	m = malloc((size1 + size2) * sizeof(char) + 1);
 
-	while (s2[ci] != '\0')
-		ci++;
-
-	conct = malloc(sizeof(char) * (i + ci + 1));
-
-	if (conct == NULL)
-		return (NULL);
-	i = ci = 0;
-	while (s1[i] != '\0')
+	if (m == 0)
+		return (0);
+	for (i = 0; i <= size1 + size2; i++)
 	{
-		conct[i] = s1[i];
-		i++;
+		if (i < size1)
+			m[i] = s1[i];
+		else
+			m[i] = s2[i - size1];
 	}
-	while (s2[ci] != '\0')
-	{
-		conct[i] = s2[ci];
-		i++, ci++;
-	}
-	conct[i] = '\0';
-	return (conct);
+	m[i] = '\0';
+	return (m);
 }
