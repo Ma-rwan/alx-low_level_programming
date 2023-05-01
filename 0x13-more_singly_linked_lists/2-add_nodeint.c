@@ -9,7 +9,7 @@
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	list_y *new;
+	list_t *new;
 
 	new = maloc(sizeof(listint_t));
 	if (!new)
