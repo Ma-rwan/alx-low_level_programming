@@ -1,5 +1,8 @@
-#ifndef VAR_H
-#define VAR_H
+#ifndef VARIADIC_H
+#define VARIADIC_H
+
+#include <stdarg.h>
+#include <stdio.h>
 
 
 int _putchar(char c);
