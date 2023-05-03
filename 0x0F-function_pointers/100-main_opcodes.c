@@ -23,6 +23,6 @@ int main(int argc, char **argv)
 		printf("Error\n"), exit(2);
 
 	while (b--)
-		printf("02hhx%s", *p++, b ? " " : "\n");
+		printf("%02hhx%s", *p++, b ? " " : "\n");
 	return (0);
 }
