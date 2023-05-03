@@ -1,6 +1,6 @@
 #include "function_pointers.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - prints its own op codes
@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 
 		printf("Error\n"), exit(2);
 
-	while (n--)
+	while (b--)
 		printf("02hhx%s", *p++, b ? " " : "\n");
 	return (0);
 }
