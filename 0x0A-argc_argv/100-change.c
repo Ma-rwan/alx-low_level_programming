@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main - print the minimum num of coins
+ * main-print the minimum num of coins
  * to make change for an amount of money.
  * @argc: num of commandline arguments.
  * @argv: pointer to an array of command line arguments.
- * Retun: 0 success, non zero fail.
+ * Return: 0 success, non zero fail.
  */
 
 int main(int argc, char *argv[])
