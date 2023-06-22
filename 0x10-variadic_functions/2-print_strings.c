@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
- * print_string - prints strings with separator
+ * print_strings - prints strings with separator
  * @separator: the string separator
  * @n: the number pf arguments
  * @...: the strings to print
